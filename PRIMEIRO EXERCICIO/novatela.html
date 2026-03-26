@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Tela</title>
+</head>
+<body>
+
+
+    <h1>Aperte o botão</h1>
+    <p>Aperte o botao para trocar o botão da cor do fundo d Tela</p>
+    <button onclick="mudarCor()">Trocar cor</button>
+
+    <script>
+    function mudarCor(){
+        const cores=["#fff5733", "#33ff57","#3357ff", "#ff33a1"];
+        const corAletorio=cores[Math.floor(Math.random() * cores.length)]
+
+
+        document.body.style.backgroundColor=corAletorio
+    }
+</script>
+</body>
+</html>
